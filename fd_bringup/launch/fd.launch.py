@@ -90,7 +90,7 @@ def generate_launch_description():
         load_controllers += [
             ExecuteProcess(
                 cmd=[
-                    'ros2 run controller_manager spawner' +
+                    'ros2 run controller_manager spawner',
                     f'--controller-manager /fd/controller_manager {controller}'
                 ],
                 shell=True,
